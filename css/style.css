@@ -22,8 +22,11 @@ nav ul{
 }
 .banner{
     background-image: url('../images/banner.png');
+    display: flex;
+    align-items: center;
     height: 100vh;
     background-repeat: no-repeat;
     background-position: right;
     background-color: #EDEDED;
+    
 }
