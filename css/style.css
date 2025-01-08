@@ -1,0 +1,21 @@
+.header-container{
+    width: 1090px;
+    margin:0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+}
+.search-cart{
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+}
+.banner{
+    background-image: ;
+}
