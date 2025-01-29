@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="duplicate" id="dup">
+        <input type="text" name="name"/>
+    </div>
+    <button onclick="duplicate();">Add new</button>
+
+    <script>
+        function duplicate()
+        {
+            let element = document.getElementById('dup').innerHTML;
+            let newElem = '<br><input type="text" name="name"/>';
+
+            let result = element+newElem;
+
+            document.getElementById('dup').innerHTML = result;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        .wrapper{
+            border: 1px solid black;
+            padding: 2px;
+        }
+        .header, .footer, .sidebar, .Content{
+            border: 1px solid black;
+            text-align: center;
+        }
+        .sidebar, .Content{
+            height: 500px;
+            
+        }
+        .main{
+            display: flex;
+            gap: 2px;
+            padding: 5px;
+        }
+        .sidebar{
+            flex-basis: 25%;
+            
+        }
+        .Content{
+            flex-basis: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            Header
+        </div>
+        <div class="main">
+            <div class="sidebar">.</div>
+            <div class="Content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, velit. Quibusdam deserunt est qui, expedita, sit odit suscipit omnis error nostrum blanditiis obcaecati quisquam debitis rerum voluptas, ex autem temporibus.</div>
+            <div class="sidebar">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, laudantium mollitia dolores et in, hic reiciendis fuga sed eum magnam illo veniam quo, quibusdam voluptas enim rem a molestiae repellendus?</div>
+        </div>
+        <div class="footer">
+            Footer
+        </div>
+    </div>
+</body>
+</html>

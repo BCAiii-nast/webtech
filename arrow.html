@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow function</title>
+</head>
+<body>
+    <form>
+        <h1>Student marks</h1>
+        <label>Web Tech</label>
+        <input type="text" id="sub1"><br>
+        <label>Opertating system</label>
+        <input type="text" id="sub2"><br>
+        <label>OOP Using Java</label>
+        <input type="text" id="sub3"><br>
+        <label>Data structure and algorithm </label>
+        <input type="text" id="sub4"><br>
+        <label>System Analysis and design</label>
+        <input type="text" id="sub5"><br>
+        <button type="button" onclick="calculate();">Submit</button>
+        <div id="avg">AVG:</div><div id="total">Total:</div><div id="percent">Prcent:</div>
+    </form>
+    <script type="text/javascript" src="marks.js"></script>
+    <script>
+        const calculate = ()=>{
+                marks.web = parseInt(document.getElementById("sub1").value);
+                marks.os = parseInt(document.getElementById("sub2").value);
+                marks.java = parseInt(document.getElementById("sub3").value);
+                marks.dsa = parseInt(document.getElementById("sub4").value);
+                marks.sad = parseInt(document.getElementById("sub5").value);
+
+            marks.calcAvg();
+            marks.totalAvg();
+            marks.percent();
+        }
+
+        let num = prompt("Enter a number");
+
+        
+
+        const natural = (num) =>{
+           for(i =1; i<= num; i++){
+            document.write(i + "<br>");
+           } 
+        }
+        natural(num);
+    </script>
+</body>
+</html>

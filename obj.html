@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label>name: </label>
+        <input type="text" name="name" id="name" /> <br>
+        <label>Email: </label>
+        <input type="text" name="email" id="email" /> <br>
+        <label>Password: </label>
+        <input type="password" name="password" id="password" /> <br>
+        
+        
+        <input type="submit" name="submit" onclick="return validate();" /> 
+        
+    </form>
+    <script src="valid.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        function validate()
+        {
+            let name = document.getElementById("name").value;
+            let email = document.getElementById("email").value;
+            let password = document.getElementById("password").value;
+
+            form.name = name;
+            form.email = email;
+            form.password = password;
+            form.nameValidate();
+            form.emailValidate();
+            form.passwordValidate();
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <div id="display"></div>
+        <div id="products"></div>
+    </div>
+    <script>
+        let urls = ['https://fakestoreapi.com/products/categories','https://fakestoreapi.com/products'];
+        Promise.all(urls.map(url=> fetch(url).then(response => response.json())))
+            .then(([categories,products]) =>{
+                let result = "<ul>";
+                for( let item in categories){
+                    result += "<li>"+categories[item]+"</li>";
+                }
+                result += "</ul>";
+                document.getElementById("display").innerHTML = result;
+                //prodcut
+                console.log(products);
+                let product = "";
+                for( let item in products){
+                    product += "<div class='product'>";
+                    product += "<div>"+products[item].title+"</div>";
+                    product += "<div><img src='"+products[item].image+"' /></div>";
+                    product += "<div>"+products[item].price+"</div>";
+                    product += "</div>";
+                }
+                
+                document.getElementById("products").innerHTML = product;
+            })
+            .catch(error => {
+                document.getElementById("products").innerHTML = error;
+            })
+    </script>
+</body>
+</html>

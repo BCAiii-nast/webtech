@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        .wrapper{
+            display: grid;
+            gap:5px;
+            grid-template-columns: 1fr 2fr 1fr;
+            grid-template-areas: 
+                "header header header"
+                "sidebar content sidebar2"
+                "footer footer footer";
+        }
+        .header, .sidebar, .content, .footer,.sidebar2{
+            border: 1px solid black;
+        }
+        .header{
+            grid-column: header;
+            text-align: center;
+        }
+        .sidebar{
+            grid-column: sidebar; 
+        }
+        .content{
+            grid-column: content;
+        }
+        .footer{
+            grid-column: footer;
+        }
+        .sidebar2{
+            grid-column: sidebar2;
+        }
+    </style>
+</head>
+<body>
+    <
+    <div class="wrapper">
+        <div class="header">header</div>
+        <div class="sidebar">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat modi rem dolore sapiente nemo in cum magni aut nisi, veniam natus nihil blanditiis. Voluptas quam, nulla repellat id suscipit eaque.</div>
+        <div class="content">content</div>
+        <div class="sidebar2">sidebar</div>
+        <div class="footer">footer</div>
+    </div>
+</body>
+</html>
